@@ -1,0 +1,86 @@
+﻿<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
+    <style>
+        .grade {
+            list-style-type: none;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+            background-color: #fff;
+        }
+
+        ul.grade li {
+            float: left;
+        }
+    </style>
+</head>
+<body>
+    <!--header-->
+    <header>
+        <h1>학력</h1>
+        <p>
+            문화초등학교<br />
+            오마중학교<br />
+            일산 가좌고등학교<br />
+            가톨릭대학교 1전공 미디어기술콘텐츠학과, 2전공 컴퓨터정보공학<br />(2017년도 입학, 2022년도 졸업)
+        </p>
+        <h1>자격증 및 수상</h1>
+        <p>
+            GTQ 2급 (2017)<br />
+            교내 게임프로그래밍 대회 수상(3위) (2019)
+        </p>
+    </header>
+    <div class="top_menu">
+        <ul class="grade">
+            <li rel="1grade">
+                <a href="">1학년</a>
+            </li>
+            <li rel="2grade">
+                <a href="">2학년</a>
+            </li>
+            <li rel="3grade">
+                <a href="">3학년</a>
+            </li>
+            <li rel="4grade">
+                <a href="">4학년</a>
+            </li>
+            <li rel="etc">
+                <a href="">그 외 활동</a>
+            </li>
+        </ul>
+    </div>
+    <nav>
+        <h2>학년별 학습기록</h2>
+        <ul>
+            <li><a href="#1grade">1학년</a></li>
+            <li><a href="#2grade">2학년</a></li>
+            <li><a href="#3grade">3학년</a></li>
+            <li><a href="#4grade">4학년</a></li>
+        </ul>
+    </nav>
+    <section>
+        <article id="1grade">
+            <h4>1학년</h4>
+            <p>과목1, 과목2, 과목3</p>
+        </article>
+        <article id="2grade">
+            <h4>2학년</h4>
+            <p>과목1, 과목2, 과목3</p>
+        </article>
+        <article id="3grade">
+            <h4>3학년</h4>
+            <p>과목1, 과목2, 과목3</p>
+        </article>
+        <article id="4grade">
+            <h4>4학년</h4>
+            <p>과목1, 과목2, 과목3</p>
+        </article>
+    </section>
+</body>
+</html>
