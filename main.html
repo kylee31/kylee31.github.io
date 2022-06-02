@@ -7,27 +7,36 @@
     <title>Portfolio</title>
     <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
     <style>
+        *{padding: 0;margin:0}
+        body {
+            background-color: rgb(225, 225, 225);
+        }
+        header {
+            background-color: #fff;
+        }
         .grade {
             list-style-type: none;
             margin: 0;
             padding: 0;
             overflow: hidden;
-            background-color: #fff;
         }
-
         ul.grade li {
             float: left;
         }
         img {
             display: block;
-            margin: 160px auto;
+            margin: 140px auto;
+        }
+        footer {
+            text-align: center;
+            font: 100 12px arial;
         }
     </style>
 </head>
 <body>
     <!--header-->
     <header>
-        <div class="top_menu">
+        <nav class="top_menu">
             <ul class="grade">
                 <li rel="1grade">
                     <a href="">1학년</a>
@@ -42,13 +51,14 @@
                     <a href="">4학년</a>
                 </li>
                 <li rel="etc">
-                    <a href="">그 외 활동</a>
+                    <a href="">프로젝트</a>
                 </li>
             </ul>
-        </div>
+        </nav>
     </header>
     <section>
-       <img src="coding.png"alt="" width="250" height="250"/>
+        <img src="coding.png" alt="" width="250" height="250" />
     </section>
+    <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>
 </html>
