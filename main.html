@@ -7,26 +7,50 @@
     <title>Portfolio</title>
     <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
     <style>
-        *{padding: 0;margin:0}
-        body {
-            background-color: rgb(225, 225, 225);
-        }
-        header {
-            background-color: #fff;
-        }
-        .grade {
-            list-style-type: none;
-            margin: 0;
+        * {
             padding: 0;
+            margin: 0
+        }
+
+        li {
+            list-style-type: none;
+        }
+
+        body {
+            background-color: #d4d4d4;
+        }
+
+        .grade {
             overflow: hidden;
         }
-        ul.grade li {
-            float: left;
+
+            .grade > li {
+                width: 20%;
+                float: left;
+                text-align: center;
+                line-height: 80px;
+                background-color: #fff;
+            }
+
+                .grade > li:hover {
+                    background-color: #d4d4d4;
+                }
+
+        a {
+            text-decoration-line: none;
+            font: bold 25px arial;
+            color: black;
         }
+
+            a:hover {
+                color: white;
+            }
+
         img {
             display: block;
-            margin: 140px auto;
+            margin: 120px auto;
         }
+
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -57,7 +81,7 @@
         </nav>
     </header>
     <section>
-        <img src="coding.png" alt="" width="250" height="250" />
+        <img src="coding.png" alt="" width="240" height="240" />
     </section>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>
