@@ -46,8 +46,8 @@
                 color: white;
             }
 
-        div{
-            display:none;
+        div {
+            display: none;
         }
 
         img {
@@ -60,31 +60,33 @@
             font: 100 12px arial;
         }
     </style>
+    <!--메뉴선택 시 보이는 화면-->
     <script type="text/javascript">
         var bDisplay = true;
-        function doDisplay(){
-            var con = document.getElementById("myDIV");
+        
+        function doDisplay() {
+
+            var con = document.getElementById("DIV");
+            var con1 = document.getElementById("myDIV1");
             var button = document.getElementById("grade1");
 
-            var con2 = document.getElementById("myDIV2");
-            var button2 = document.getElementById("grade2");
 
-	    if(con.style.display=='none'){
-	        con.style.display = 'block';
-	        button.style.backgroundColor = "white";
-	    }else{
-	        con.style.display = 'none';
-	        button.style.backgroundColor = "#d4d4d4";
-	    }
+            if (con.style.display == 'none') {
+                con.style.display = 'block';
+                button.style.backgroundColor = "white";
+            } else {
+                con.style.display = 'none';                
+                button.style.backgroundColor = "#d4d4d4";
+            }
 
-	    if (con2.style.display == 'block') {
-	        con2.style.display = 'none';
-	    } else {
-	        con2.style.display = 'block';
-	    }
-
-
-     }
+            if (con1.style.display == 'block') {
+                con1.style.display = 'none';
+            }
+            else {
+                con1.style.display = 'block';
+            }  
+           
+        }
     </script>
 </head>
 <body>
@@ -110,27 +112,29 @@
             </ul>
         </nav>
     </header>
-    <section id="myDIV">
+    <!--첫화면-->
+    <section id="DIV">
         <img src="coding.png" alt="" width="240" height="240" />
     </section>
-    <div id="myDIV2">
+    <!--메뉴선택 시 화면-->
+    <div id="myDIV1">
         <h3>컴퓨터 프로그래밍1</h3>
+        <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
+    </div>
+    <div id="myDIV2">
+        <h3>컴</h3>
         <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
     </div>
     <div id="myDIV3">
-        <h3>컴퓨터 프로그래밍1</h3>
+        <h3>프로그래밍1</h3>
         <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
     </div>
     <div id="myDIV4">
-        <h3>컴퓨터 프로그래밍1</h3>
+        <h3>래밍1</h3>
         <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
     </div>
     <div id="myDIV5">
-        <h3>컴퓨터 프로그래밍1</h3>
-        <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
-    </div>
-    <div id="myDIV6">
-        <h3>컴퓨터 프로그래밍1</h3>
+        <h3> 프로그래밍34321</h3>
         <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
     </div>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>

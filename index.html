@@ -20,7 +20,7 @@
             border: 2px solid #d4d4d4;
         }
         #but {
-            width: 60px;
+            width: 55px;
             height: 35px;
             border: 0;
             border-radius: 5px;
@@ -38,7 +38,7 @@
         <div>
             <img src="calculate.png" width="180" height="180" />
             <form name="fo" method="get">
-                <input id="pw" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" size="10" value="" />
+                <input id="pw" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" size="6" value="" />
                 <input id ="but" type="submit" onclick="sendPassword(); return false;" value="입력" />  <!--onclick만 사용시 오류남, return false 추가하니까 location 정상작동-->
             </form>
         </div>
@@ -48,7 +48,7 @@
             var pw = document.getElementById('pw').value;  //입력값 변수에 담기
             if (pw == 13) {
                 alert("Welcome!");
-                location.replace("main.html");  //뒤로 돌아가기 금지 (첫번째 시도에 href 사용)
+                location.replace("main.html");  //뒤로 돌아가기 금지 (첫번째 시도에 href 사용함)
             }
             else {
                 alert("Try Again");
