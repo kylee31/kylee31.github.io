@@ -12,9 +12,14 @@
             margin: 0
         }
 
+        header {
+            background-color: #fff;
+        }
+
         li {
             list-style-type: none;
         }
+
 
         body {
             background-color: #d4d4d4;
@@ -25,25 +30,25 @@
         }
 
             .grade > li {
-                width: 20%;
                 float: left;
+                width: 20%;
                 text-align: center;
                 line-height: 80px;
                 background-color: #fff;
             }
 
-                .grade > li:hover {
-                    background-color: #d4d4d4;
-                }
+        li.grade1 {
+            background-color: #d4d4d4;
+        }
 
         a {
             text-decoration-line: none;
             font: bold 25px arial;
-            color: #000000;
+            color: #fff;
         }
 
-            a:hover {
-                color: white;
+            a.first {
+                color: #000000;
             }
 
         img {
@@ -56,36 +61,27 @@
             font: 100 12px arial;
         }
     </style>
-    <!--메뉴선택 시 보이는 화면-->
 </head>
 <body>
     <!--header-->
     <header>
         <nav class="top_menu">
             <ul class="grade">
-                <li id="grade1">
-                    <a href="grade1.html">1학년</a>
+                <li class="grade1">
+                    <a class="first">1학년</a>
                 </li>
-                <li id="grade2">
-                    <a href="grade2.html">2학년</a>
-                </li>
-                <li id="grade3">
-                    <a href="">3학년</a>
-                </li>
-                <li id="grade4">
-                    <a href="">4학년</a>
-                </li>
-                <li id="etc">
-                    <a href="">프로젝트</a>
-                </li>
+                <li><a>2학년</a></li>
+                <li><a>3학년</a></li>
+                <li><a>4학년</a></li>
+                <li><a>프로젝트</a></li>
             </ul>
         </nav>
     </header>
-    <!--첫화면-->
-    <section id="DIV">
-        <img src="coding.png" alt="" width="240" height="240" />
-    </section>
-    
+    <!--내용-->
+    <div id="myDIV">
+        <h3>컴퓨터 프로그래밍1</h3>
+        <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
+    </div>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>
 </html>
