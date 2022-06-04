@@ -9,37 +9,33 @@
     <style>
         * {
             padding: 0;
-            margin: 0
+            margin: 0;
         }
 
         header {
             background-color: #fff;
         }
 
-        li {
-            list-style-type: none;
-        }
-
-
         body {
             background-color: #d4d4d4;
         }
 
-        .grade {
+        .page {
             overflow: hidden;
         }
 
-            .grade > li {
+            .page > li {
                 float: left;
                 width: 20%;
                 text-align: center;
                 line-height: 80px;
                 background-color: #fff;
                 visibility: hidden;
+                list-style-type: none;
             }
 
-        li.etc {
-            visibility:visible;
+        li.page5{
+            visibility: visible; /*처음엔 display 사용함*/
             background-color: #d4d4d4;
         }
 
@@ -52,9 +48,13 @@
                 color: #000000;
             }
 
-        img {
-            display: block;
-            margin: 120px auto;
+        div {
+            padding: 30px 40px 30px 80px;
+        }
+
+        .content > li {
+            list-style-image: url("img/edit.png");
+            margin: 0 0 40px 0;
         }
 
         footer {
@@ -67,19 +67,23 @@
     <!--header-->
     <header>
         <nav class="top_menu">
-            <ul class="grade">
-                <li><a>1학년</a></li>
-                <li><a>2학년</a></li>
-                <li><a>3학년</a></li>
-                <li><a>4학년</a></li>
-                <li class="etc"><a class="fifth">프로젝트</a></li>
+            <ul class="page">
+                <li><a>개인 프로젝트</a></li>
+                <li><a>팀 프로젝트</a></li>
+                <li><a>자격증/봉사</a></li>
+                <li><a>언어공부</a></li>
+                <li class="page5"><a class="fifth">관심분야</a></li>
             </ul>
         </nav>
     </header>
     <!--내용-->
-    <div id="myDIV">
-        <h3>컴퓨터 프로그래밍1</h3>
-        <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
+    <div>
+        <ul class="content">
+            <li>
+                <h2>영상 제작</h2>
+                <span>(Davinci Resolve)</span>
+            </li>
+        </ul>
     </div>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>

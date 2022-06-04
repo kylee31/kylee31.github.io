@@ -9,55 +9,54 @@
     <style>
         * {
             padding: 0;
-            margin: 0
+            margin: 0;
         }
 
         header {
             background-color: #fff;
         }
 
-        li {
-            list-style-type: none;
-        }
-
-
         body {
             background-color: #d4d4d4;
         }
 
-        .grade {
+        .page {
             overflow: hidden;
         }
 
-            .grade > li {
+            .page > li {
                 float: left;
                 width: 20%;
                 text-align: center;
                 line-height: 80px;
                 background-color: #fff;
                 visibility: hidden;
+                list-style-type: none;
             }
 
-        li.grade2 {
-            visibility: visible;
+        li.page2 {
+            visibility: visible; /*처음엔 display 사용함*/
             background-color: #d4d4d4;
         }
 
         a {
             text-decoration-line: none;
             font: bold 25px arial;
-           
         }
 
             a.second {
                 color: #000000;
             }
 
-        img {
-            display: block;
-            margin: 120px auto;
+        div {
+            padding: 30px 40px 30px 80px;
         }
-        
+
+        .content > li {
+            list-style-image: url("img/edit.png");
+            margin: 0 0 40px 0;
+        }
+
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -68,21 +67,21 @@
     <!--header-->
     <header>
         <nav class="top_menu">
-            <ul class="grade">
-                <li><a>1학년</a></li>
-                <li class="grade2"><a class="second">2학년</a></li>
-                <li><a>3학년</a></li>
-                <li><a>4학년</a></li>
-                <li><a>프로젝트</a></li>
+            <ul class="page">
+                <li><a>개인 프로젝트</a></li>
+                <li class="page2"><a class="second">팀 프로젝트</a></li>
+                <li><a>자격증/봉사</a></li>
+                <li><a>언어공부</a></li>
+                <li><a>관심분야</a></li>
             </ul>
         </nav>
     </header>
     <!--내용-->
-    <div id="myDIV">
-        <ul>
+    <div>
+        <ul class="content">
             <li>
-                <h2>컴퓨터 프로그래밍</h2>
-                <p>포토샵, c언어</p>
+                <h2>게임프로그래밍</h2>
+                <span>(2019, 과제)</span>
             </li>
         </ul>
     </div>
