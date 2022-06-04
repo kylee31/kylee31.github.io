@@ -15,12 +15,7 @@
         header {
             background-color: #fff;
         }
-
-        li {
-            list-style-type: none;
-        }
-
-
+        
         body {
             background-color: #d4d4d4;
         }
@@ -35,16 +30,17 @@
                 text-align: center;
                 line-height: 80px;
                 background-color: #fff;
+                visibility: hidden;
             }
 
         li.grade1 {
+            visibility: visible; /*처음엔 display 사용함*/
             background-color: #d4d4d4;
         }
 
         a {
             text-decoration-line: none;
             font: bold 25px arial;
-            color: #fff;
         }
 
             a.first {
@@ -67,9 +63,7 @@
     <header>
         <nav class="top_menu">
             <ul class="grade">
-                <li class="grade1">
-                    <a class="first">1학년</a>
-                </li>
+                <li class="grade1"><a class="first">1학년</a></li>
                 <li><a>2학년</a></li>
                 <li><a>3학년</a></li>
                 <li><a>4학년</a></li>
@@ -78,9 +72,8 @@
         </nav>
     </header>
     <!--내용-->
-    <div id="myDIV">
-        <h3>컴퓨터 프로그래밍1</h3>
-        <p>포토샵 자격증 취득, c언어 기초지식 학습</p>
+    <div>
+       
     </div>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>
