@@ -15,16 +15,16 @@
         header {
             background-color: #fff;
         }
-        
+
         body {
             background-color: #d4d4d4;
         }
 
-        .grade {
+        .page {
             overflow: hidden;
         }
 
-            .grade > li {
+            .page > li {
                 float: left;
                 width: 20%;
                 text-align: center;
@@ -33,7 +33,7 @@
                 visibility: hidden;
             }
 
-        li.grade1 {
+        li.page1 {
             visibility: visible; /*처음엔 display 사용함*/
             background-color: #d4d4d4;
         }
@@ -46,12 +46,18 @@
             a.first {
                 color: #000000;
             }
-        div{
-            padding: 30px 30px 30px 80px;            
+
+        div {
+            padding: 30px 40px 30px 80px;
         }
-       ul{
-           list-style-image: url("img/edit.png");
-       }
+
+        ul {
+            list-style-image: url("img/edit.png");
+        }
+        .content > li{
+            margin: 0 0 40px 0;
+        }
+
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -62,22 +68,24 @@
     <!--header-->
     <header>
         <nav class="top_menu">
-            <ul class="grade">
-                <li class="grade1"><a class="first">1학년</a></li>
-                <li><a>2학년</a></li>
-                <li><a>3학년</a></li>
-                <li><a>4학년</a></li>
-                <li><a>프로젝트</a></li>
+            <ul class="page">
+                <li class="page1"><a class="first">개인 프로젝트</a></li>
+                <li><a>팀 프로젝트</a></li>
+                <li><a>자격증/봉사</a></li>
+                <li><a>언어공부</a></li>
+                <li><a>관심분야</a></li>
             </ul>
         </nav>
     </header>
     <!--내용-->
     <div>
-       <ul>
-           <li>컴퓨터 프로그래밍1</li>
-           <p>dfdfdfdfdfdfdfdf</p>
-           <li>웹프로그래밍</li>
-       </ul>
+        <ul class="content">
+            <li>
+                <h2>디지털콘텐츠창작입문</h2>
+                <span>dfdfdfdfdfd</span>
+            </li>
+            <li><h2>웹프로그래밍</h2></li>
+        </ul>
     </div>
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
 </body>
