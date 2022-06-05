@@ -71,7 +71,7 @@
                     <a href="page4.html">언어공부</a>
                 </li>
                 <li id="page5">
-                    <a href="page5.html">관심분야</a>
+                    <a href="" onclick="sendPassword(); return false;">관심분야</a>
                 </li>
             </ul>
         </nav>
@@ -80,7 +80,18 @@
     <section id="DIV">
         <img src="img/coding.png" alt="" width="240" height="240" />
     </section>
-    
     <footer><br /><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
+    <script>
+        function sendPassword() {
+            var pass = prompt('비밀번호');
+            if (pass == 3031) {
+                alert("확인");
+                location.href="page5.html";
+            }
+            else {
+                alert("실패");
+            }
+        }
+    </script>
 </body>
 </html>
