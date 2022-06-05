@@ -11,7 +11,10 @@
             padding: 0;
             margin: 0;
         }
-
+        @font-face{
+            font-family:"nanum1";
+            src:url("font/NanumSquareRoundEB.woff");
+        }
         header {
             background-color: #fff;
         }
@@ -35,7 +38,7 @@
             }
 
         li.page5 {
-            visibility: visible; /*처음엔 display 사용함*/
+            visibility: visible; /*처음엔 display 사용함, 드래그할떄 글씨가 보여서 사용안함*/
             background-color: #d4d4d4;
         }
 
@@ -43,11 +46,10 @@
             text-decoration-line: none;
             font: bold 25px arial;
         }
-
             a.fifth {
                 color: #000000;
             }
-        
+
         .write {
             padding: 30px 40px 30px 80px;
         }
@@ -56,7 +58,9 @@
             list-style-image: url("img/edit.png");
             margin: 0 0 40px 0;
         }
-
+        li > span {
+            font-family: nanum1;
+        }
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -72,7 +76,7 @@
                 <li><a>팀 프로젝트</a></li>
                 <li><a>자격증/봉사</a></li>
                 <li><a>언어공부</a></li>
-                <li class="page5"><a class="fifth">관심분야</a></li>
+                <li class="page5"><a class="fifth">기록공간</a></li>
             </ul>
         </nav>
     </header>
@@ -85,13 +89,18 @@
             </li>
             <li>
                 <h2>카카오톡 테마 제작</h2>
-                <span>(2012)<br/>카카오톡 초기 사용 단계에서 원하는 테마 사용을 하고 싶어서 처음 포토샵을 사용해보게 되었다. 
-                원하는 사진을 png 파일 형식으로 바꾸어 만들어야 했는데 어려움을 겪어서 네이버 지식인에 글을 올렸다.
-                친절하게 동영상으로 답글을 달아준 사람 덕분에 테마를 만들 수 있었다.
-                포토샵이 친근하게 사용할 수 있다는 점을 깨달았고 그때부터 포토샵이나 영상제작 등에 흥미를 가지게 되었다.<br />
-                <img src="img/photoshop.png" /> ▶당시 올렸던 네이버 지식in 질문과 답변<br />
+                <span>
+                    (2012)<br />카카오톡 초기 사용 단계에서 원하는 테마 사용을 하고 싶어서 처음 포토샵을 사용해보게 되었다.
+                    원하는 사진을 png 파일 형식으로 바꾸어 만들어야 했는데 어려움을 겪어서 네이버 지식인에 글을 올렸다.
+                    친절하게 동영상으로 답글을 달아준 사람 덕분에 테마를 만들 수 있었다.
+                    포토샵이 친근하게 사용할 수 있다는 점을 깨달았고 그때부터 포토샵이나 영상제작 등에 흥미를 가지게 되었다.<br />
+                    <img src="img/photoshop.png" /> ▶당시 올렸던 네이버 지식in 질문과 답변..ㅋㅋㅋ<br />
 
                 </span>
+            </li>
+            <li>
+                <h2>웹프로그래밍</h2>
+                <span>HTML+CSS+Javascript</span>
             </li>
         </ul>
     </div>
