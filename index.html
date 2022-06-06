@@ -4,54 +4,92 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>WHO AM I?</title>
-    <!--css 적용하기-->
+    <title>Portfolio</title>
+    <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
     <style>
-        h1 {
-            font: bold 50px arial;
+        * {
+            padding: 0;
+            margin: 0
         }
-        div{
-            width: 400px;
-            height: 240px;
-            border: 15px solid #808080;
+        body {
+            background-color: #e6e6e6;
         }
-        #pw{
-            height: 30px;
-            border: 2px solid #d4d4d4;
+
+        .page {
+            overflow: hidden;
         }
-        #but {
-            width: 55px;
-            height: 35px;
-            border: 0;
-            border-radius: 5px;
-            font: bold 18px arial;
-            background-color: #d4d4d4;
+            .page > li {
+                width: 20%;
+                float: left;
+                text-align: center;
+                line-height: 80px;
+                background-color: #fff;
+                list-style-type: none;
+            }
+
+                .page > li:hover {
+                    background-color: #e6e6e6;
+                }
+
+        a {
+            text-decoration-line: none;
+            font: bold 25px arial;
+            color: #000000;
+        }
+
+            a:hover {
+                color: white;
+            }
+
+        img {
+            display: block;
+            margin: 120px auto;
+        }
+
+        footer {
+            text-align: center;
+            font: 100 12px arial;
         }
     </style>
+    <!--메뉴선택 시 보이는 화면-->
 </head>
 <body>
-    <center>
-        <br />
-        <h1>나는 누구일까요?</h1>
-        <h3>아래에 답을 입력해주세요.</h3>
-        <br /><br />
-        <div>
-            <img src="img/calculate.png" width="180" height="180" />
-            <form name="fo" method="get">
-                <input id="pw" onKeyup="this.value=this.value.replace(/[^0-9]/g,'');" size="6" value="" />
-                <input id ="but" type="submit" onclick="sendPassword(); return false;" value="입력" />  <!--onclick만 사용시 오류남, return false 추가하니까 location 정상작동-->
-            </form>
-        </div>
-    </center>
+    <!--header-->
+    <header>
+        <nav class="top_menu">
+            <ul class="page">
+                <li id="page1">
+                    <a href="page1.html">개인 프로젝트</a>
+                </li>
+                <li id="page2">
+                    <a href="page2.html">팀 프로젝트</a>
+                </li>
+                <li id="page3">
+                    <a href="page3.html">자격증/봉사</a>
+                </li>
+                <li id="page4">
+                    <a href="page4.html">언어공부</a>
+                </li>
+                <li id="page5">
+                    <a href="" onclick="sendPassword(); return false;">기록공간</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <!--첫화면-->
+    <section id="DIV">
+        <img src="img/coding.png" alt="" width="240" height="240" />
+    </section>
+    <footer><br />20220601-20220000 &copy;Lee Kyung Yeon &trade;LKY</footer>
     <script>
         function sendPassword() {
-            var pw = document.getElementById('pw').value;  //입력값 변수에 담기
-            if (pw == 13) {
-                alert("Welcome!");
-                location.replace("main.html");  //뒤로 돌아가기 금지 (첫번째 시도에 href 사용함)
+            var pass = prompt('비밀번호');
+            if (pass == 3031) {
+                alert("확인");
+                location.href="page5.html";
             }
             else {
-                alert("Try Again");
+                alert("실패");
             }
         }
     </script>
