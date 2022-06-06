@@ -11,7 +11,10 @@
             padding: 0;
             margin: 0;
         }
-
+        @font-face {
+            font-family: "nanum1";
+            src: url("font/NanumSquareRoundOTFB.woff");
+        }
         header {
             background-color: #fff;
         }
@@ -47,19 +50,22 @@
             a.first {
                 color: #000000;
             }
-
-        div {
-            padding: 30px 40px 30px 80px;
+        hr{
+            background-color:#1cbf15;
+        }
+        .write {
+            padding: 30px 80px 30px 80px;
         }
 
-        ul {
-            
-        }
         .content > li {
-            margin: 0 0 40px 0;
-            list-style-image: url("img/edit.png");
+            list-style: none;
+            padding: 20px 40px 20px 40px;
+            margin: 10px 0 40px 0;
+            background-color: #f7f7f7;
         }
-
+        li > span {
+            font-family: nanum1;
+        }
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -80,31 +86,27 @@
         </nav>
     </header>
     <!--내용-->
-    <div>
+    <div class="write">
         <ul class="content">
             <li>
-                <h2>디지털미디어공학개론</h2>
-                <span>(2018, 과제)</span>
+                <h2>디지털미디어공학개론</h2>(2018, 과제)<hr />
+                <span></span>
             </li>
             <li>
-                <h2>웹프로그래밍</h2>
-                <span>(2018, 과제)</span>
+                <h2>웹프로그래밍</h2>(2018, 과제)<hr />
+                <span></span>
             </li>
             <li>
-                <h2>컴퓨터그래픽스</h2>
-                <span>(2019, 과제)</span>
+                <h2>컴퓨터그래픽스</h2>(2019, 과제)<hr />
+                <span></span>
             </li>
             <li>
-                <h2>데이터마이닝</h2>
-                <span>(2020, 과제)</span>
+                <h2>컴퓨터애니메이션</h2>(2021, 과제)<hr />
+                <span></span>
             </li>
             <li>
-                <h2>컴퓨터애니메이션</h2>
-                <span>(2021, 과제)</span>
-            </li>
-            <li>
-                <h2>웹페이지(포트폴리오)</h2>
-                <span>(2022, 토이 프로젝트)<br />과제, 봉사활동 등의 결과물들을 정리하기 위해서 제작.</span>
+                <h2>웹페이지(포트폴리오)</h2>(2022, 토이 프로젝트)<hr />
+                <span><br />과제, 봉사활동 등의 결과물들을 정리하기 위해서 제작.</span>
             </li>
         </ul>
     </div>
