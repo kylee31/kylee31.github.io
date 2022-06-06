@@ -11,7 +11,10 @@
             padding: 0;
             margin: 0;
         }
-
+        @font-face {
+            font-family: "nanum1";
+            src: url("font/NanumSquareRoundOTFB.woff");
+        }
         header {
             background-color: #fff;
         }
@@ -47,16 +50,21 @@
             a.third {
                 color: #000000;
             }
-
-        div {
-            padding: 30px 40px 30px 80px;
+        hr {
+            background-color: #1cbf15;
         }
-
+        .write {
+            padding: 30px 80px 30px 80px;
+        }
         .content > li {
-            list-style-image: url("img/edit.png");
-            margin: 0 0 40px 0;
+            list-style: none;
+            padding: 20px 40px 20px 40px;
+            margin: 10px 0 40px 0;
+            background-color: #f7f7f7;
         }
-
+        li > span{
+            font-family: nanum1;
+        }
         footer {
             text-align: center;
             font: 100 12px arial;
@@ -77,20 +85,14 @@
         </nav>
     </header>
     <!--내용-->
-    <div>
+    <div class="write">
         <ul class="content">
             <li>
-                <h2>GTQ 2급</h2>
-                <span>(2017)</span>
-            </li>
-        </ul>
-    </div>
-    <hr />
-    <div>
-        <ul class="content">
+                <h2 style='display:inline'>GTQ 2급 </h2><h3 style='display:inline'>(2017)</h3><hr />
+                <span></span>
             <li>
-                <h2>홍보지 디자인 작성</h2>
-                <span>(2019)</span>
+                <h2  style='display:inline'>홍보지 디자인 작성 </h2><h3 style='display:inline'>(2019)</h3><hr />
+                <span></span>
             </li>
         </ul>
     </div>
