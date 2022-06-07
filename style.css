@@ -33,7 +33,7 @@ body {
 li.select {
     visibility: visible; /*처음엔 display 사용함*/
     background-color: #e6e6e6;
-    color: #000000;
+    color: #545454;
 }
 
 a {
