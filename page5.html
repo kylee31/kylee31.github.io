@@ -6,70 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Portfolio</title>
     <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
-    <style>
-        * {
-            padding: 0;
-            margin: 0;
-        }
-        @font-face{
-            font-family:"nanum1";
-            src:url("font/NanumSquareRoundOTFB.woff");
-        }
-        header {
-            background-color: #fff;
-        }
-
-        body {
-            background-color: #e6e6e6;
-        }
-
-        .page {
-            overflow: hidden;
-        }
-
-            .page > li {
-                float: left;
-                width: 20%;
-                text-align: center;
-                line-height: 80px;
-                background-color: #fff;
-                visibility: hidden;
-                list-style-type: none;
-            }
-
-        li.page5 {
-            visibility: visible; /*처음엔 display 사용함, 드래그할떄 글씨가 보여서 사용안함*/
-            background-color: #e6e6e6;
-        }
-
-        a {
-            text-decoration-line: none;
-            font: bold 25px arial;
-        }
-            a.fifth {
-                color: #000000;
-            }
-        hr{
-            background-color: #1cbf15;
-        }
-        .write {
-            padding: 30px 80px 30px 80px;
-        }
-
-        .content > li {
-            list-style: none;
-            padding: 20px 40px 20px 40px;
-            margin: 10px 0 40px 0;
-            background-color: #f7f7f7;
-        }
-        li > span {
-            font-family: nanum1;
-        }
-        footer {
-            text-align: center;
-            font: 100 12px arial;
-        }
-    </style>
+    <link href="style.css" rel="stylesheet">
 </head>
 <body>
     <!--header-->
@@ -80,7 +17,7 @@
                 <li><a>팀 프로젝트</a></li>
                 <li><a>자격증/봉사</a></li>
                 <li><a>언어공부</a></li>
-                <li class="page5"><a class="fifth">기록공간</a></li>
+                <li class="select"><a>기록공간</a></li>
             </ul>
         </nav>
     </header>
@@ -103,7 +40,7 @@
                     포토샵이 친근하게 사용할 수 있다는 점을 깨달았고 그때부터 포토샵이나 영상제작 등에 흥미를 가지게 되었다.<br />
                     <img src="img/photoshop.png" /> ▶네이버 지식in 질문과 답변<br />
                 </span>
-            </li>            
+            </li>
         </ul>
     </div>
     <footer>20220601-20220000 &copy;Lee Kyung Yeon</footer>

@@ -1,0 +1,66 @@
+﻿* {
+    padding: 0;
+    margin: 0;
+}
+
+@font-face {
+    font-family: "nanum1";
+    src: url("font/NanumSquareRoundOTFB.woff");
+}
+
+header {
+    background-color: #fff;
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.page {
+    overflow: hidden;
+}
+
+    .page > li {
+        float: left;
+        width: 20%;
+        text-align: center;
+        line-height: 80px;
+        background-color: #fff;
+        visibility: hidden;
+        list-style-type: none;
+    }
+
+li.select {
+    visibility: visible; /*처음엔 display 사용함*/
+    background-color: #e6e6e6;
+    color: #000000;
+}
+
+a {
+    text-decoration-line: none;
+    font: bold 25px arial;
+}
+
+hr {
+    background-color: #1cbf15;
+}
+
+.write {
+    padding: 30px 80px 30px 80px;
+}
+
+.content > li {
+    list-style: none;
+    padding: 20px 40px 20px 40px;
+    margin: 10px 0 40px 0;
+    background-color: #f7f7f7;
+}
+
+li > span {
+    font-family: nanum1;
+}
+
+footer {
+    text-align: center;
+    font: 100 12px arial;
+}
