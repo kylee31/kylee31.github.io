@@ -7,6 +7,7 @@
     <title>Portfolio</title>
     <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
     <link href="style.css" rel="stylesheet">
+    <link href="style2.css" rel="stylesheet">
 </head>
 <body>
     <!--header-->
@@ -27,14 +28,28 @@
             <li>
                 <h2>GTQ 2급 (2017)</h2><hr />
                 <span></span>
-            <li class="item-wrapper">
-                <h2>홍보지 제작 (2019)</h2><hr />
-                <span></span>
+            <li id="item-wrapper">
+                <h2>홍보지 제작 (2018)</h2><hr />
+                <div id="slideShow">
+                    <ul class="slides">
+                        <li><img src="img/pic1.jpg" width="200" /></li>
+                        <li><img src="img/pic2.jpg" width="200" /></li>
+                        <li><img src="img/pic3.jpg" width="200" /></li>
+                        <li><img src="img/pic4.jpg" width="200" /></li>
+                    </ul>
+                    <p class="controller">
+                        <!-- &lang: 왼쪽 방향 화살표
+                        &rang: 오른쪽 방향 화살표 -->
+                        <span class="prev"><img src="img/left.png" width="25" /></span>
+                        <span class="next"><img src="img/right.png" width="25" /></span>
+                    </p>
+                </div>
             </li>
         </ul>
     </div>
     <img class="gotop" src="img/up-arrow.png" onclick="moveTop()" width="40" />
     <footer>20220601-20220000 &copy;Lee Kyung Yeon</footer>
     <script src="jscript.js"></script>
+    <script src="slideShow.js"></script>
 </body>
 </html>

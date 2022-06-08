@@ -1,0 +1,65 @@
+﻿* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style-type: none;
+}
+
+#item-wrapper {
+    padding: 20px 40px 0px 40px;
+    margin: 10px 0 40px 0;
+}
+
+/* 보여줄 구간의 높이와 넓이 설정 */
+#slideShow {
+    width: 800px;
+    height: 300px;
+    position: relative;
+    margin: 30px auto;
+    overflow: hidden;
+    /*리스트 형식으로 이미지를 일렬로 
+  정렬할 것이기 때문에, 500px 밖으로 튀어 나간 이미지들은
+  hidden으로 숨겨줘야됨*/
+}
+
+.slides {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 2400px; /* 슬라이드할 사진과 마진 총 넓이 */
+    transition: left 0.5s ease-out;
+    /*ease-out: 처음에는 느렸다가 점점 빨라짐*/
+}
+
+    /* 첫 번째 슬라이드 가운데에 정렬하기위해
+첫번째 슬라이드만 margin-left조정 */
+    .slides li:first-child {
+        margin-left: 50px;
+    }
+
+    /* 슬라이드들 옆으로 정렬 */
+    .slides li:not(:last-child) {
+        float: left;
+        margin-right: 50px;
+    }
+
+    .slides li {
+        float: left;
+    }
+
+.controller span {
+    position: absolute;
+    top: 50%;
+    cursor: pointer;
+}
+
+.prev {
+    left: 10px;
+}
+
+.next {
+    right: 10px;
+}
