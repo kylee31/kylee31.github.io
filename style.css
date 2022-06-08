@@ -60,6 +60,13 @@ li > span {
     font-family: nanum1;
 }
 
+.gotop {
+    position: fixed;
+    bottom: 30px;
+    right: 20px;
+    z-index: 999;
+}
+
 footer {
     text-align: center;
     font: 100 12px arial;
