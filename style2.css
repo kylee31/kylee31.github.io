@@ -15,7 +15,7 @@ li {
 
 /* 보여줄 구간의 높이와 넓이 설정-3개의 사진을 보여주기 위해 width 800 설정 */
 #slideShow {
-    width: 800px;
+    width: 1000px;
     height: 300px;
     position: relative;
     margin: 30px auto;
@@ -34,13 +34,13 @@ li {
     /* 첫 번째 슬라이드 가운데에 정렬하기위해
 첫번째 슬라이드만 margin-left조정 */
     .slides li:first-child {
-        margin-left: 50px;
+        margin-left: 40px;
     }
 
     /* 슬라이드들 옆으로 정렬 */
     .slides li:not(:last-child) {
         float: left;
-        margin-right: 50px;
+        margin-right: 40px;
     }
 
     .slides li {
