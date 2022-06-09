@@ -7,6 +7,10 @@
     font-family: "nanum1";
     src: url("font/NanumSquareRoundOTFB.woff");
 }
+@font-face {
+    font-family: "nanum2";
+    src: url("font/NanumSquareRoundOTFR.woff");
+}
 
 header {
     background-color: #fff;
@@ -58,6 +62,10 @@ hr {
 
 li > span {
     font-family: nanum1;
+}
+
+.year{
+    font-family: nanum2;
 }
 
 .gotop {
