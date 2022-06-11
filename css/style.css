@@ -5,11 +5,11 @@
 
 @font-face {
     font-family: "nanum1";
-    src: url("font/NanumSquareRoundOTFB.woff");
+    src: url("../font/NanumSquareRoundOTFB.woff"); /*상위폴더 이동*/
 }
 @font-face {
     font-family: "nanum2";
-    src: url("font/NanumSquareRoundOTFR.woff");
+    src: url("../font/NanumSquareRoundOTFR.woff");
 }
 
 header {
