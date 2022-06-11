@@ -7,6 +7,27 @@
     <title>Portfolio</title>
     <!--style 선택자 사용, class명으로 css 적용 범위 선택-->
     <link href="style.css" rel="stylesheet">
+    <style>
+        #text{
+            font-family: nanum1;
+            background-color: #ffffff;
+            border-collapse: collapse;
+        }
+        #text tr{
+            height: 70px;
+            border-top:2px solid #d1d1d1;
+            border-bottom: 1px solid #d1d1d1;
+        }
+        .row1 {
+            text-align: center;
+            background-color: #d7e1d9;
+            width: 200px;
+        }
+        .row2 {
+            padding: 5px 10px 5px 10px;
+            width: 800px;
+        }
+    </style>
 </head>
 <body>
     <!--header-->
@@ -34,10 +55,26 @@
                     <!--유튜브 소스코드 첨부-->
                     <iframe width="448" height="252" src="https://www.youtube.com/embed/SVOTXUpaUR8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
                     <br /><br />
-                    <!--표 첨부하기(아이템 소개, 엔딩 소개 등-->
-                    제한시간 내 캐릭터가 목표지점에 도달해야 하며, 액자식 방식으로 게임 속 주인공이 게임을 하는 형식의 게임. 
-                    방해요소(시간감소, 장애물 등)와 아이템(시간추가, 속도증가 등) 존재.<br />                    
+                    <!--표 첨부하기(아이템 소개, 엔딩 소개 등-->                    
                 </span>
+                <table id="text" border="0">
+                    <tr>
+                        <td class="row1">목표</td>
+                        <td class="row2">제한시간 내 캐릭터가 목표지점에 도달해야 하며, 액자식 방식으로 게임 속 주인공이 게임을 하는 형식의 게임.</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">아이템</td>
+                        <td class="row2">시간추가, 속도증가</td>
+                    </tr>
+                    <tr>
+                        <td class="row1">장애물</td>
+                        <td class="row2">방해요소, 시간감소</td>
+                    </tr>
+                    <tr>
+                        <td class="row1"></td>
+                        <td class="row2"></td>
+                    </tr>
+                </table>
             </li>
         </ul>
     </div>
