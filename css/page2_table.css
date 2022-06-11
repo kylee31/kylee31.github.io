@@ -1,0 +1,22 @@
+﻿#text {
+    font-family: nanum1;
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+    #text tr {
+        height: 70px;
+        border-top: 2px solid #d1d1d1;
+        border-bottom: 1px solid #d1d1d1;
+    }
+
+.row1 {
+    text-align: center;
+    background-color: #d7e1d9;
+    width: 200px;
+}
+
+.row2 {
+    padding: 5px 10px 5px 10px;
+    width: 800px;
+}
