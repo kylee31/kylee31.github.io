@@ -1,0 +1,58 @@
+﻿* {
+    padding: 0;
+    margin: 0
+}
+
+body {
+    background-color: #e6e6e6;
+}
+
+.page {
+    overflow: hidden;
+}
+
+    .page > li {
+        width: 20%;
+        float: left;
+        text-align: center;
+        line-height: 80px;
+        background-color: #fff;
+        list-style-type: none;
+    }
+
+        .page > li:hover {
+            background-color: #e6e6e6;
+        }
+
+a {
+    text-decoration-line: none;
+    font: bold 25px arial;
+    color: #000000;
+}
+
+    a:hover {
+        color: white;
+    }
+
+table {
+    background-color: #199831;
+    margin: 115px auto 115px auto;
+}
+
+    table td {
+        padding: 10px 10px 10px 10px;
+    }
+
+td a {
+    font: bold 17px arial;
+    color: #fff;
+}
+
+    td a:hover {
+        color: #4a4a4a;
+    }
+
+footer {
+    text-align: center;
+    font: 100 12px arial;
+}
