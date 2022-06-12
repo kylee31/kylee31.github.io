@@ -1,10 +1,10 @@
 function sendPassword() {
-    var pass = prompt('ºñ¹Ğ¹øÈ£');
+    var pass = prompt('ë¹„ë°€ë²ˆí˜¸');
     if (pass == 3031) {
-        alert("È®ÀÎ");
+        alert("í™•ì¸");
         location.href = "page5.html";
     }
     else {
-        alert("½ÇÆĞ");
+        alert("ì‹¤íŒ¨");
     }
 }
