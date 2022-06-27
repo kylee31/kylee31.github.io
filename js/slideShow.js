@@ -1,13 +1,13 @@
-const slides = document.querySelector('.slides'); //ÀüÃ¼ ½½¶óÀÌµå ÄÁÅ×ÀÌ³Ê
-const slideImg = document.querySelectorAll('.slides li'); //¸ðµç ½½¶óÀÌµåµé
-let currentIdx = 0; //ÇöÀç ½½¶óÀÌµå index
-const slideCount = slideImg.length; // ½½¶óÀÌµå °³¼ö
-const prev = document.querySelector('.prev'); //ÀÌÀü ¹öÆ°
-const next = document.querySelector('.next'); //´ÙÀ½ ¹öÆ°
-const slideWidth = 300; //ÇÑ°³ÀÇ ½½¶óÀÌµå ³ÐÀÌ
-const slideMargin = 100; //½½¶óÀÌµå°£ÀÇ margin °ª
+const slides = document.querySelector('.slides'); //ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½
+const slideImg = document.querySelectorAll('.slides li'); //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½
+let currentIdx = 0; //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ index
+const slideCount = slideImg.length; // ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
+const prev = document.querySelector('.prev'); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
+const next = document.querySelector('.next'); //ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ°
+const slideWidth = 300; //ï¿½Ñ°ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½
+const slideMargin = 100; //ï¿½ï¿½ï¿½ï¿½ï¿½Ìµå°£ï¿½ï¿½ margin ï¿½ï¿½
 
-//ÀüÃ¼ ½½¶óÀÌµå ÄÁÅ×ÀÌ³Ê ³ÐÀÌ ¼³Á¤
+//ï¿½ï¿½Ã¼ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½
 slides.style.width = (slideWidth + slideMargin) * slideCount + 'px';
 
 function moveSlide(num) {
@@ -16,15 +16,22 @@ function moveSlide(num) {
 }
 
 prev.addEventListener('click', function () {
-    /*Ã¹ ¹øÂ° ½½¶óÀÌµå·Î Ç¥½Ã µÆÀ»¶§´Â ÀÌÀü ¹öÆ° ´­·¯µµ ¾Æ¹«·± ¹ÝÀÀ ¾ø°Ô ÇÏ±â À§ÇØ 
-    currentIdx !==0ÀÏ¶§¸¸ moveSlide ÇÔ¼ö ºÒ·¯¿È */
+    /*Ã¹ ï¿½ï¿½Â° ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½ Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ 
+    currentIdx !==0ï¿½Ï¶ï¿½ï¿½ï¿½ moveSlide ï¿½Ô¼ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ */
 
     if (currentIdx !== 0) moveSlide(currentIdx - 1);
 });
 
 next.addEventListener('click', function () {
-    /* ¸¶Áö¸· ½½¶óÀÌµå·Î Ç¥½Ã µÆÀ» ¶§ ´ÙÀ½ ¹öÆ° ´­·¯µµ ¾Æ¹«·± ¹ÝÀÀ ¾ø°Ô ÇÏ±â À§ÇØ ~-3ÀÏ¶§ moveSlide ÇÔ¼ö ºÒ·¯¿È */
-    if (currentIdx !== slideCount - 4) {
-        moveSlide(currentIdx + 1);
+    /* ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½Ìµï¿½ï¿½ Ç¥ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½Æ° ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½Æ¹ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ ï¿½Ï±ï¿½ ï¿½ï¿½ï¿½ï¿½ ~-3ï¿½Ï¶ï¿½ moveSlide ï¿½Ô¼ï¿½ ï¿½Ò·ï¿½ï¿½ï¿½ */
+    if (document.documentElement.clientWidth >= 790) {
+        if (currentIdx !== slideCount - 4) {
+            moveSlide(currentIdx + 1);
+        }
+    }
+    else{
+        if (currentIdx !== slideCount - 1) {
+            moveSlide(currentIdx + 1);
+        }
     }
 });

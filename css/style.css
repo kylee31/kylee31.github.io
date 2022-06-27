@@ -50,7 +50,7 @@ hr {
 }
 
 .write {
-    margin: 40px 80px 30px 80px;
+    margin: 40px 80px 40px 80px;
 }
 
 .content > li {
@@ -79,4 +79,12 @@ footer {
     height: 30px;
     text-align: center;
     font: 100 12px arial;
+}
+@media(max-width: 790px){
+    .page a{
+        font-size:0.9rem;
+    }
+    .write {
+        margin: 20px 40px 20px 40px;
+    }
 }

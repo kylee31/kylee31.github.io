@@ -40,7 +40,7 @@ table {
 }
 
     table td {
-        padding: 10px 10px 10px 10px;
+        padding: 10px;
     }
 
 td a {
@@ -55,4 +55,10 @@ td a {
 footer {
     text-align: center;
     font: 100 12px arial;
+}
+
+@media(max-width: 790px){
+    .page a{
+        font-size:0.9rem;
+    }
 }
