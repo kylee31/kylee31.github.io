@@ -60,6 +60,10 @@ li {
 .next {
     right: 10px;
 }
+.pic{
+    color:rgb(0, 127, 8);
+    font-size:1rem;
+}
 
 @media(max-width:790px){
     #slideShow {

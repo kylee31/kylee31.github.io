@@ -65,6 +65,29 @@ li > span {
     font-family: nanum1;
 }
 
+.git{
+    display: flex;
+    align-items: center;
+}
+.git+.git{
+    margin-top:10px;
+}
+
+.githublogo{
+    width:30px;
+    height:30px;  
+    margin-right:10px;
+}
+
+.githubLink{
+    font-size:1.3rem;
+    color:black;
+}
+
+.githubLink:hover{
+    color:#199831;
+}
+
 .year{
     font-family: nanum2;
 }
@@ -73,7 +96,7 @@ li > span {
     position: fixed;
     bottom: 30px;
     right: 20px;
-    z-index: 999;
+    z-index: 1;
 }
 
 footer {
@@ -81,7 +104,8 @@ footer {
     text-align: center;
     font: 100 12px arial;
 }
-@media(max-width: 790px){
+
+@media screen and (max-width: 790px){
     .page a{
         font-size:0.9rem;
     }

@@ -57,7 +57,7 @@ footer {
     font: 100 12px arial;
 }
 
-@media(max-width: 790px){
+@media screen and (max-width: 790px){
     .page a{
         font-size:0.9rem;
     }
