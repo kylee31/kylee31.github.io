@@ -1,5 +1,5 @@
 # 📦 storage
-활동을 정리하는 웹 페이지 제작 (2022, HTML, CSS, JavaScript)
+활동을 정리하는 웹 페이지 제작 (2022, HTML+CSS+JavaScript)
 <br><br>
 
 ## 프로젝트 설명
