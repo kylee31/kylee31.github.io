@@ -1,8 +1,8 @@
 # 📦 storage
-HTML, CSS, JavaScript를 사용하여 코드 등의 활동을 정리하는 웹 페이지 제작 (2022)
+활동을 정리하는 웹 페이지 제작 (2022, HTML, CSS, JavaScript)
 <br><br>
 
-## Description
+## 프로젝트 설명
 > **menu**
 1. 개인 프로젝트 : 진행했던 과제, 프로젝트 정리
 2. 팀 프로젝트 : 팀 프로젝트 결과물 소개
@@ -14,3 +14,9 @@ HTML, CSS, JavaScript를 사용하여 코드 등의 활동을 정리하는 웹 �
 > **link**
 
 [shortcut link](https://kylee31.github.io/storage)
+
+![제목 없음](https://user-images.githubusercontent.com/106156087/214577978-f8af439a-8565-490a-b14e-d8e273f2992d.jpg)
+<br><br>
+
+## 프로젝트 개발환경
+visual studio code<br>
